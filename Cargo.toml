@@ -26,6 +26,9 @@ categoires = [
            "command-line-utilities"
 ]
 
+[lib]
+name = "scanrs"
+
 # See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
 
 [dependencies]
