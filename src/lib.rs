@@ -1,6 +1,7 @@
 use std::io;
 
 
+/* Scan Integer Functions */
 fn scand() -> i64 {
     let mut int = String::new();
     io::stdin().read_line(&mut int).expect("IO ERROR");
@@ -15,10 +16,24 @@ fn scani() -> i64 {
     return int.parse::<i64>().expect("Input error");
 }
 
-#[cfg(test)]
-mod tests {
-    #[test]
-    fn test_scand() {
-        assert_eq!(2 + 2, 4);
-    }
+fn scand_32() -> i32 {
+    let mut int = String::new();
+    io::stdin().read_line(&mut int).expect("IO ERROR");
+
+    return int.parse::<i32>().expect("Input error");
+}
+
+fn scani_32() -> i32 {
+    let mut int = String::new();
+    io::stdin().read_line(&mut int).expect("IO ERROR");
+
+    return int.parse::<i32>().expect("Input error");
+}
+
+/* Scan Float Functions */
+fn scanf() -> f64 {
+    let mut float = String::new();
+    io::stdin().read_line(&mut float).expect("IO ERROR");
+
+    return float.parse::<f64>().expect("Input Error");
 }
