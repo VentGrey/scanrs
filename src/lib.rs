@@ -37,3 +37,10 @@ fn scanf() -> f64 {
 
     return float.parse::<f64>().expect("Input Error");
 }
+
+fn scanf_32() -> f32 {
+    let mut float = String::new();
+    io::stdin().read_line(&mut float).expect("IO ERROR");
+
+    return float.parse::<i32>().expect("Input Error");
+}
