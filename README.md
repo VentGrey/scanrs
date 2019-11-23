@@ -59,17 +59,21 @@ fn main() {
 
 ## What kind of primitive types can it handle?
 
-Well, I just developed this yesterday, so it can only read `f32`, `f64`, `i32` &
-`i64` for now, but I'll keep developing this crate in the future to read
-smaller data types, and a "manual" array index-by-index input.
-
 Current functions available:
+
+> All functions default to `64` bit types.
 
 * `scand` / `scani`: Reads an integer from stdin.
 
 * `scanfl`: Reads a float from stdin.
 
-> Note: If you wish to use this with 32 bit data types you should use the `_32`
+* `scanarr`: Scans a whitespace separated array
+
+* `scanln`: Scans a String
+
+> Note: If you wish to use this with 32 bit data types you should use the `_<bits>`
 > postfix in the function name.
+
+Ex: `scand_128` for `128-bit` integers.
 
 ## TODO: 
