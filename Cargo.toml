@@ -1,6 +1,6 @@
 [package]
 name = "scanrs"
-version = "0.1.0"
+version = "0.1.5"
 authors = ["Omar Jair Purata Funes <omarpurataf@gmail.com>"]
 edition = "2018"
 description = "A simple Rust Library to handle user input in an easy way."
