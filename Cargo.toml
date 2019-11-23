@@ -14,10 +14,7 @@ keywords = [
          "terminal",
          "stdin",
          "scanf",
-         "gets",
-         "Scanner",
-         "ReadLine",
-         "ReadInt"
+         "gets"
 ]
 
 categoires = [
