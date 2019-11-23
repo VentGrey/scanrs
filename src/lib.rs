@@ -6,70 +6,70 @@ pub fn scand() -> i64 {
     let mut int = String::new();
     io::stdin().read_line(&mut int).expect("IO ERROR");
 
-    return int.trim().parse::<i64>().expect("Input error");
+    int.trim().parse::<i64>().expect("Input error")
 }
 
 pub fn scani() -> i64 {
     let mut int = String::new();
     io::stdin().read_line(&mut int).expect("IO ERROR");
 
-    return int.trim().parse::<i64>().expect("Input error");
+    int.trim().parse::<i64>().expect("Input error")
 }
 
 pub fn scand_8() -> i8 {
     let mut int = String::new();
     io::stdin().read_line(&mut int).expect("IO ERROR");
 
-    return int.trim().parse::<i8>().expect("Input error");
+    int.trim().parse::<i8>().expect("Input error")
 }
 
 pub fn scani_8() -> i8 {
     let mut int = String::new();
     io::stdin().read_line(&mut int).expect("IO ERROR");
 
-    return int.trim().parse::<i8>().expect("Input error");
+    int.trim().parse::<i8>().expect("Input error")
 }
 
 pub fn scand_16() -> i16 {
     let mut int = String::new();
     io::stdin().read_line(&mut int).expect("IO ERROR");
 
-    return int.trim().parse::<i16>().expect("Input error");
+    int.trim().parse::<i16>().expect("Input error")
 }
 
 pub fn scani_16() -> i16 {
     let mut int = String::new();
     io::stdin().read_line(&mut int).expect("IO ERROR");
 
-    return int.trim().parse::<i16>().expect("Input error");
+    int.trim().parse::<i16>().expect("Input error")
 }
 
 pub fn scand_32() -> i32 {
     let mut int = String::new();
     io::stdin().read_line(&mut int).expect("IO ERROR");
 
-    return int.trim().parse::<i32>().expect("Input error");
+    int.trim().parse::<i32>().expect("Input error")
 }
 
 pub fn scani_32() -> i32 {
     let mut int = String::new();
     io::stdin().read_line(&mut int).expect("IO ERROR");
 
-    return int.trim().parse::<i32>().expect("Input error");
+    int.trim().parse::<i32>().expect("Input error")
 }
 
 pub fn scand_128() -> i128 {
     let mut int = String::new();
     io::stdin().read_line(&mut int).expect("IO ERROR");
 
-    return int.trim().parse::<i128>().expect("Input error");
+    int.trim().parse::<i128>().expect("Input error")
 }
 
 pub fn scani_128() -> i128 {
     let mut int = String::new();
     io::stdin().read_line(&mut int).expect("IO ERROR");
 
-    return int.trim().parse::<i128>().expect("Input error");
+    int.trim().parse::<i128>().expect("Input error")
 }
 
 /* Scan Float Functions */
@@ -77,14 +77,14 @@ pub fn scanfl() -> f64 {
     let mut float = String::new();
     io::stdin().read_line(&mut float).expect("IO ERROR");
 
-    return float.trim().parse::<f64>().expect("Input Error");
+    float.trim().parse::<f64>().expect("Input Error")
 }
 
 pub fn scanfl_32() -> f32 {
     let mut float = String::new();
     io::stdin().read_line(&mut float).expect("IO ERROR");
 
-    return float.trim().parse::<f32>().expect("Input Error");
+    float.trim().parse::<f32>().expect("Input Error")
 }
 
 /* Scan a string */
@@ -93,7 +93,7 @@ pub fn scanln() -> String {
     io::stdin().read_line(&mut string).expect("IO ERROR");
 
     let trim: &[_] = &['\n', '\r'];
-    return string.trim_end_matches(trim).to_owned();
+    string.trim_end_matches(trim).to_owned()
 }
 
 /* Scan Arrays (Whitespace separated) */
@@ -106,7 +106,7 @@ pub fn scanarr() -> Vec<i64> {
     .map(|x| x.parse::<i64>().expect("parse error"))
         .collect::<Vec<i64>>();
 
-    return vec;
+    vec
 }
 
 pub fn scanarr_8() -> Vec<i8> {
@@ -117,7 +117,7 @@ pub fn scanarr_8() -> Vec<i8> {
     .map(|x| x.parse::<i8>().expect("parse error"))
         .collect::<Vec<i8>>();
 
-    return vec;
+    vec
 }
 
 pub fn scanarr_16() -> Vec<i16> {
@@ -128,7 +128,7 @@ pub fn scanarr_16() -> Vec<i16> {
     .map(|x| x.parse::<i16>().expect("parse error"))
         .collect::<Vec<i16>>();
 
-    return vec;
+    vec
 }
 
 pub fn scanarr_32() -> Vec<i32> {
@@ -139,7 +139,7 @@ pub fn scanarr_32() -> Vec<i32> {
     .map(|x| x.parse::<i32>().expect("parse error"))
         .collect::<Vec<i32>>();
 
-    return vec;
+    vec
 }
 
 pub fn scanarr_128() -> Vec<i128> {
@@ -150,5 +150,5 @@ pub fn scanarr_128() -> Vec<i128> {
     .map(|x| x.parse::<i128>().expect("parse error"))
         .collect::<Vec<i128>>();
 
-    return vec;
+    vec
 }
