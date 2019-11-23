@@ -30,6 +30,48 @@ pub fn scani_32() -> i32 {
     return int.trim().parse::<i32>().expect("Input error");
 }
 
+pub fn scand_8() -> i8 {
+    let mut int = String::new();
+    io::stdin().read_line(&mut int).expect("IO ERROR");
+
+    return int.trim().parse::<i8>().expect("Input error");
+}
+
+pub fn scani_8() -> i8 {
+    let mut int = String::new();
+    io::stdin().read_line(&mut int).expect("IO ERROR");
+
+    return int.trim().parse::<i8>().expect("Input error");
+}
+
+pub fn scand_16() -> i16 {
+    let mut int = String::new();
+    io::stdin().read_line(&mut int).expect("IO ERROR");
+
+    return int.trim().parse::<i16>().expect("Input error");
+}
+
+pub fn scani_16() -> i16 {
+    let mut int = String::new();
+    io::stdin().read_line(&mut int).expect("IO ERROR");
+
+    return int.trim().parse::<i16>().expect("Input error");
+}
+
+pub fn scand_128() -> i128 {
+    let mut int = String::new();
+    io::stdin().read_line(&mut int).expect("IO ERROR");
+
+    return int.trim().parse::<i128>().expect("Input error");
+}
+
+pub fn scani_128() -> i128 {
+    let mut int = String::new();
+    io::stdin().read_line(&mut int).expect("IO ERROR");
+
+    return int.trim().parse::<i128>().expect("Input error");
+}
+
 /* Scan Float Functions */
 pub fn scanfl() -> f64 {
     let mut float = String::new();
@@ -45,3 +87,5 @@ pub fn scanfl_32() -> f32 {
     return float.trim().parse::<f32>().expect("Input Error");
 }
 
+
+/* Scan  */
