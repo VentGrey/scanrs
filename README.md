@@ -64,8 +64,10 @@ Well, I just developed this yesterday, so it can only read `f32`, `f64`, `i32` &
 smaller data types, and a "manual" array index-by-index input.
 
 Current functions available:
-`scand` / `scani`: Reads an integer from stdin.
-`scanfl`: Reads a float from stdin.
+
+* `scand` / `scani`: Reads an integer from stdin.
+
+* `scanfl`: Reads a float from stdin.
 
 > Note: If you wish to use this with 32 bit data types you should use the `_32`
 > postfix in the function name.
