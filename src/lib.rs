@@ -95,3 +95,60 @@ pub fn scanln() -> String {
     let trim: &[_] = &['\n', '\r'];
     return string.trim_end_matches(trim).to_owned();
 }
+
+/* Scan Arrays (Whitespace separated) */
+
+pub fn scanarr() -> Vec<i64> {
+    let mut a_str = String::new();
+    io::stdin().read_line(&mut a_str).expect("read error");
+
+    let vec = a_str.split_whitespace()
+    .map(|x| x.parse::<i64>().expect("parse error"))
+        .collect::<Vec<i64>>();
+
+    return vec;
+}
+
+pub fn scanarr_8() -> Vec<i8> {
+    let mut a_str = String::new();
+    io::stdin().read_line(&mut a_str).expect("read error");
+
+    let vec = a_str.split_whitespace()
+    .map(|x| x.parse::<i8>().expect("parse error"))
+        .collect::<Vec<i8>>();
+
+    return vec;
+}
+
+pub fn scanarr_16() -> Vec<i16> {
+    let mut a_str = String::new();
+    io::stdin().read_line(&mut a_str).expect("read error");
+
+    let vec = a_str.split_whitespace()
+    .map(|x| x.parse::<i16>().expect("parse error"))
+        .collect::<Vec<i16>>();
+
+    return vec;
+}
+
+pub fn scanarr_32() -> Vec<i32> {
+    let mut a_str = String::new();
+    io::stdin().read_line(&mut a_str).expect("read error");
+
+    let vec = a_str.split_whitespace()
+    .map(|x| x.parse::<i32>().expect("parse error"))
+        .collect::<Vec<i32>>();
+
+    return vec;
+}
+
+pub fn scanarr_128() -> Vec<i128> {
+    let mut a_str = String::new();
+    io::stdin().read_line(&mut a_str).expect("read error");
+
+    let vec = a_str.split_whitespace()
+    .map(|x| x.parse::<i128>().expect("parse error"))
+        .collect::<Vec<i128>>();
+
+    return vec;
+}
