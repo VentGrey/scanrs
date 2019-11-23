@@ -87,4 +87,11 @@ pub fn scanfl_32() -> f32 {
     return float.trim().parse::<f32>().expect("Input Error");
 }
 
-/* Scan*/
+/* Scan a string */
+pub fn scanln() -> String {
+    let mut string = String::new();
+    io::stdin().read_line(&mut string).expect("IO ERROR");
+
+    let trim: &[_] = &['\n', '\r'];
+    return string.trim_end_matches(trim).to_owned();
+}
