@@ -77,3 +77,6 @@ Current functions available:
 Ex: `scand_128` for `128-bit` integers.
 
 ## TODO: 
+
+* Make this work with generics so functions can read ANY type.
+* Make this crate colored to send fancy errors.

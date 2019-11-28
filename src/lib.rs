@@ -1,6 +1,5 @@
 use std::io;
 
-
 /* Scan Integer Functions */
 pub fn scand() -> i64 {
     let mut int = String::new();
