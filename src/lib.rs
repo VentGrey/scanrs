@@ -151,3 +151,27 @@ pub fn scanarr_128() -> Vec<i128> {
 
     vec
 }
+
+/* Scan an array of floating point numbers */
+
+
+// Default function scans 64 bit arrays
+pub fn scanfl_arr() -> Vec<f64> {
+    let mut a_str = String::new();
+    io::stdin().read_line(&mut a_str).expect("read error");
+
+    let vec = a_str.split_whitespace()
+                   .map(|x| x.parse::<f64>().expect("parse error"))
+                   .collect::<Vec<f64>>();
+    vec
+}
+
+pub fn scanfl_arr_32() -> Vec<f32> {
+    let mut a_str = String::new();
+    io::stdin().read_line(&mut a_str).expect("read error");
+
+    let vec = a_str.split_whitespace()
+                   .map(|x| x.parse::<f32>().expect("parse error"))
+                   .collect::<Vec<f32>>();
+    vec
+}
