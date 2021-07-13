@@ -48,11 +48,11 @@ However this turns a little verbose when you need to read multiple variables, so
 you can use this crate instead.
 
 ``` rust
-use scanrs::scand;
+use scanrs::scann;
 
 fn main() {
     println!("Please input a number");
-    let num = scand();
+    let num = scann();
     println!("You entered {}", num);
 }
 ```
@@ -61,22 +61,13 @@ fn main() {
 
 Current functions available:
 
-> All functions default to `64` bit types.
+* `scann`: Reads a number from stdin.
 
-* `scand` / `scani`: Reads an integer from stdin.
-
-* `scanfl`: Reads a float from stdin.
-
-* `scanarr`: Scans a whitespace separated array
+* `scanvec`: Scans a whitespace separated list of elements
 
 * `scanln`: Scans a String
 
-> Note: If you wish to use this with 32 bit data types you should use the `_<bits>`
-> postfix in the function name.
-
-Ex: `scand_128` for `128-bit` integers.
-
 ## TODO: 
 
-* Make this work with generics so functions can read ANY type.
-* Make this crate colored to send fancy errors.
+- [x] Make this work with generics so functions can read ANY type.
+- [ ] Make this crate colored to send fancy errors.
