@@ -69,7 +69,7 @@ Current functions available:
 
 ## TODO: 
 
-- [x] Make this work with generics so functions can read ANY type.
+- [x] Make this work with generics so functions can read ANY type. - Special thanks to @[nik0rasu](https://github.com/nik0rasu) for helping me with this :D
 - [ ] Allow users to customize input message.
 - [ ] Allow users to customize error message.
 - [ ] Make this crate colored to send fancy errors.
