@@ -1,5 +1,6 @@
 # scanrs
-A simple Rust Library to easily process std input.
+
+A dead-simple Rust Library to easily process std input. No dependencies, no strange functionalities, not even useful enough. You can always copy-paste the code inside `src/lib.rs`.
 
 ## What is it?
 
@@ -9,23 +10,24 @@ cherrypicked to avoid bloating something this simple.
 
 https://www.reddit.com/r/rust/comments/dy365h/only_one_wish_for_rust_2020/
 
+> 2023 update: I've realized the terrible mistake I've made by publishing this. Adding up to the dependency-hell problem because devs are independent-no-more. I'll keep maintaining this "feature complete" crate. However, I plead to you, please, don't be an npm user and get a library for dead-simple things :) checkout [rust easy snippets for this](https://github.com/VentGrey/rust-easy-snippets)
+
 scanrs is a small working rust crate that makes handling user input
 easier.
 
-Rust has a rather "weird" way to read std input, even though asking for user
-input inside terminal applications is a little outdated.
+Rust has a rather ~~"weird"~~ verbose way to read std input, even though asking for user
+input inside terminal applications is a little outdated. If you cannot rely on the command-line arguments for reliable input, this crate can prove itself useful.
 
-But it's neccesary in some cases or in begginer-exercises to ask for a proper
-input, sadly doing this in rust results in long lines of text and the end
-program turns very verbose.
+The other case-scenario in my head is to use this to aid new rustaceans to ask for a proper
+input, sadly doing this in rust results in long lines of text and the end program turns very verbose (not really).
 
-This library just attempts to make reading standard primitive types easier which
+This library just attempts to make reading standard primitive types (and two more cases) easier which
 makes it faster, simple to understand and lightweight.
 
 ## How to use it?
 
 This crate doesn't have much science behind it, to it's fairly simple to use,
-you just call the function you wish.
+you just assign a variable and set it's value to the result of the function you wish.
 
 
 ### One way of reading user input in rust:
@@ -42,6 +44,19 @@ let number: f64 = match number.trim().parse() {
     Ok(num) => num,
     Err(_) => panic!("Not a number!"),
 };
+```
+
+or
+
+``` rust
+let mut number = String::new();
+io::stdin().read_line(&mut number).expect("IO Failure");
+
+match input.trim().parse() {
+    Ok(number) => number,
+    Err(_) => panic!("Invalid input. Please enter a valid number."),
+}
+
 ```
 
 However this turns a little verbose when you need to read multiple variables, so
@@ -62,14 +77,10 @@ fn main() {
 Current functions available:
 
 * `scann`: Reads a number from stdin.
-
 * `scanvec`: Scans a whitespace separated list of elements
-
 * `scanln`: Scans a String
 
 ## TODO: 
-
-- [x] Make this work with generics so functions can read ANY type. - Special thanks to @[nik0rasu](https://github.com/nik0rasu) for helping me with this :D
-- [ ] Allow users to customize input message.
-- [ ] Allow users to customize error message.
-- [ ] Make this crate colored to send fancy errors.
+- [ ] ~~Allow users to customize input message.~~ - Dimmed as bloatware
+- [ ] Allow users to customize the function error message without introducing a breaking change.
+- [ ] ~~Make this crate colored to send fancy errors.~~ - Dimmed as bloatware
